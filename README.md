@@ -8,6 +8,9 @@ This is a React application for course listing and student dashboard.
 - Course details page
 - Student dashboard
 
+## Demo
+Watch the [demo video](https://www.loom.com/share/fca4e3525f3e4bea96ba5c9cdd969c1f?sid=09a077b4-6d1b-46d3-8e4d-0ebd5574c69e) to see the website in action.
+
 ## Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn
