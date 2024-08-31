@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+body {
+  background-color: #2c2c2c; /* Dark gray for the background */
+  color: #e0d4b7; /* Light cream for the text */
+  font-family: 'Georgia', serif; /* A classic serif font */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h3 {
+  color: #b59d7a; /* Warm brown for headings */
+  text-shadow: 1px 1px 3px #000; /* Subtle shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #e0d4b7; /* Same light cream as text */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+a:hover {
+  color: #b59d7a; /* Change color on hover */
+}
+
+button {
+  background-color: #4a3f35; /* Deep brown */
+  color: #e0d4b7;
+  border: 1px solid #b59d7a;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b3027; /* Darker brown on hover */
+}
+
+input[type="text"] {
+  background-color: #4a3f35; /* Dark background */
+  color: #e0d4b7;
+  border: 1px solid #b59d7a;
+  padding: 8px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 4px; /* Rounded corners for the input */
+  width: 300px;
+  font-family: 'Georgia', serif;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  border-bottom: 1px solid #b59d7a;
+  padding: 12px 0;
+}
+
+progress {
+  width: 100%;
+  appearance: none;
+  height: 10px;
+  background-color: #3b3027; /* Darker brown background */
+}
+
+progress::-webkit-progress-bar {
+  background-color: #3b3027;
+}
+
+progress::-webkit-progress-value {
+  background-color: #b59d7a; /* Lighter brown for progress */
+}
+
+.drawer-trigger {
+  background-color: #4a3f35; /* Deep brown */
+  color: #e0d4b7;
+  border: 1px solid #b59d7a;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed; /* Fix position */
+   /* Adjust top position */
+  right: 16px; /* Adjust right position */
+  z-index: 1000; /* Ensure it appears above other elements */
+
+}
+
+.drawer-trigger:hover {
+  background-color: #3b3027; /* Darker brown on hover */
+}
+
+.drawer-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+}
+
+.drawer-content {
+  background-color: #2c2c2c; /* Dark gray background */
+  color: #e0d4b7; /* Light cream text */
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+  margin-top: 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.drawer-header {
+  padding: 16px;
+  background-color: #4a3f35; /* Deep brown */
+  border-bottom: 1px solid #b59d7a; /* Warm brown border */
+}
+
+.drawer-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0d4b7; /* Light cream text */
+}
+
+.drawer-body {
+  padding: 16px;
+  color: #e0d4b7; /* Light cream text */
+}
+
+.drawer-footer {
+  padding: 16px;
+  background-color: #3b3027; /* Darker brown background */
+  border-top: 1px solid #b59d7a; /* Warm brown border */
+  text-align: right;
 }
